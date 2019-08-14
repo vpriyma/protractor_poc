@@ -8,7 +8,7 @@ export class MainGooglePage extends BasePage {
     private searchFrom = element(by.xpath('//form[@id="tsf"]'));
 
     navigateTo() {
-        browser.get('https://www.google.com/');
+        browser.get(browser.params.baseUrl);
     }
 
     search(text: string) {
