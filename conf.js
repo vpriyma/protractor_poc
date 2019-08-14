@@ -6,7 +6,8 @@ exports.config = {
     browserName: 'chrome'
   },
   params: {
-    baseUrl: 'https://www.google.com/'
+    baseUrl: 'https://www.google.com/',
+    searchWord: 'Automation'
   },
   onPrepare() {
     //browser section
