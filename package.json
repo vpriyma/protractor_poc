@@ -4,8 +4,6 @@
   "description": "Protractor POC project",
   "main": "conf.js",
   "scripts": {
-    "driver-update": "webdriver-manager update --standalone",
-    "server-start": "webdriver-manager start --standalone",
     "test": "protractor conf.js",
     "allure-report": "allure generate allure-results --clean -o allure-report || true"
   },
