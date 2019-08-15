@@ -1,6 +1,6 @@
 exports.config = {
-  // seleniumServerJar: 'node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar',
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  seleniumServerJar: 'node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar',
+  // seleniumAddress: 'http://localhost:4444/wd/hub',
   framework: 'jasmine',
   specs: ['src\\google-search-spec.ts'],
   capabilities: {
