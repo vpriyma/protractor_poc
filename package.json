@@ -4,6 +4,7 @@
   "description": "Protractor POC project",
   "main": "conf.js",
   "scripts": {
+    "webdriver-update": "webdriver-manager update",
     "test": "protractor conf.js",
     "allure-report": "allure generate allure-results --clean -o allure-report || true"
   },
