@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "npm run webdriver-update",
     "test": "protractor conf.js",
-    "webdriver-update": "webdriver-manager update --standalone=false --gecko=false",
+    "webdriver-update": "webdriver-manager update",
     "allure-report": "allure generate allure-results --clean -o allure-report || true"
   },
   "author": "Vitalii Priyma",
