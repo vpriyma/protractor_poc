@@ -7,7 +7,7 @@ describe('Google tests', function() {
 
     it('Do search and check that title has searched word', function() {
         mainPage.navigateTo();
-        mainPage.search(word)
+        mainPage.search(word);
         expect(mainPage.getTitle()).toContain(word);
     });
 });

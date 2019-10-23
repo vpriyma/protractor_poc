@@ -2,9 +2,35 @@ exports.config = {
   seleniumServerJar: 'node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar',
   // seleniumAddress: 'http://localhost:4444/wd/hub',
   framework: 'jasmine',
-  specs: ['src\\google-search-spec.ts'],
+  specs: ['src/google-search-spec.ts'],
   capabilities: {
     browserName: 'chrome'
+
+    // Run multiple specs simultaneously
+    // shardTestFiles: true,
+    // maxInstances: 3
+
+    // For running same specs on different browsers/devices in parallel.
+    // If you would like to run more than one instance of WebDriver on the same
+    // tests, use multiCapabilities, which takes an array of capabilities.
+    // If this is specified, capabilities will be ignored.
+    // multiCapabilities: [
+    //   {
+    //     'browserName': 'chrome',
+    //     user: 'user@perfectomobile.com',
+    //     password: 'password',
+    //     platformName: 'Android',
+    //     manufacturer: 'Samsung',
+    //     model: 'Galaxy S5'
+    //   }, {
+    //     'browserName': 'chrome',
+    //     user: 'user@perfectomobile.com',
+    //     password: 'password',
+    //     platformName: 'Android',
+    //     manufacturer: 'Samsung',
+    //     model: 'Galaxy S6'
+    //   }], 
+
   },
   params: {
     baseUrl: 'https://www.google.com/',
