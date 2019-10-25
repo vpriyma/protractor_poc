@@ -44,7 +44,7 @@ exports.config = {
     fs.emptyDir('jasmine-result/');
     fs.emptyDir('jasmine-report/');
     fs.emptyDir('allure-results/');
-    fs.emptyDir('allure-reports/');
+    fs.emptyDir('allure-report/');
   },
 
   onPrepare() {
