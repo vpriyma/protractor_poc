@@ -12,7 +12,7 @@ export class MainGooglePage extends BasePage {
     }
 
     search(text: string) {
-        this.searchField.sendKeys('Automation');
+        this.searchField.sendKeys(text);
         this.searchFrom.submit();
         return new SearchResultPage();
     }
